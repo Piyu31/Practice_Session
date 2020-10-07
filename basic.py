@@ -103,8 +103,95 @@ print(a.replace("h", "y"))
 a = "Priyanka , Mahakud!"
 print(a.split(","))
 
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+  print(x)
+print(len(thislist))
+
 txt = "The rain in Spain stays mainly in the plain"
 x = "ain" in txt
 print(x)
 
+thatlist = ["apple", "banana", "cherry"]
+thatlist.append("orange")
+print(thatlist)
 
+fruitlist = ["apple", "banana", "cherry"]
+fruitlist.remove("banana")
+print(fruitlist)
+
+justlist = ["dhoni", "watson", "curran"]
+justlist.pop()
+print(justlist)
+
+ipllist = ["merlin", "arthur", "gene"]
+del ipllist
+
+seclist = list(("sin", "cos", "tan"))
+print(seclist)
+
+def my_function():
+  print("My first my function")
+my_function()
+
+def let_function(fname):
+  print(fname + " Amazing")
+
+let_function("Emmanuel")
+let_function("Rocking")
+let_function("Lenus")
+
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+
+
+j = 1
+while j < 9:
+  print(j)
+  if j == 6:
+    break
+  j=j+1
+
+k = 1
+while k < 8:
+  print(k)
+  k = k+ 1
+else:
+  print("k is no longer less than 8")
+
+#local scope
+def myfunc():
+  x = 300
+  print(x)
+
+myfunc()
+
+def fun():
+  x = 13456
+  def sun():
+    print(x)
+  sun()
+
+fun()
+
+def greeting(name):
+  print("Hello, " + name)
+
+
+x = min(5, 10, 25)
+y = max(5, 10, 25)
+
+print(x)
+print(y)
+
+x = abs(-7.25)
+print(x)
+
+x = pow(4, 3)
+print(x)
+
+import math
+x = math.sqrt(121)
+print(x)
